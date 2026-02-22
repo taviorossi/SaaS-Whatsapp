@@ -1,0 +1,46 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "lint": "eslint \"src/**/*.ts\"",
+    "test": "vitest run",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@comprazap/shared": "workspace:*",
+    "@nestjs/common": "^10.4.7",
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/core": "^10.4.7",
+    "@nestjs/platform-fastify": "^10.4.7",
+    "@prisma/client": "^6.1.0",
+    "fastify": "^5.1.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "zod": "^3.23.8",
+    "class-validator": "^0.14.1",
+    "class-transformer": "^0.5.1",
+    "jwks-rsa": "^3.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "@nestjs/swagger": "^8.0.7",
+    "ioredis": "^5.4.1",
+    "@nestjs/bullmq": "^10.2.1",
+    "bullmq": "^5.13.0",
+    "axios": "^1.7.7",
+    "axios-retry": "^4.5.0",
+    "@google/generative-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.9",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.15.0",
+    "prisma": "^6.1.0",
+    "typescript": "~5.7.2",
+    "vitest": "^2.1.6"
+  }
+}
